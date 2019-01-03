@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:layout_width="300dp" android:layout_height="match_parent">
+
+    <TextView
+        android:text="전송 기기 번호"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/dialog_phone_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="11"
+        android:hint="01012341234"
+        android:inputType="phone"/>
+
+    <include
+        layout="@layout/dialog_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <!--<LinearLayout-->
+        <!--android:gravity="center"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<Button-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:id="@+id/btn_add"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="ADD"/>-->
+        <!--<Button-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:id="@+id/btn_cancel"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="CANCEL"/>-->
+    <!--</LinearLayout>-->
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:gravity="center">
+
+    <!-- 순번 -->
+    <TextView
+        android:id="@+id/item_index"
+        android:text="1"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content" />
+
+    <!-- 프로젝트명 -->
+    <TextView
+        android:id="@+id/item_proj_name"
+        android:text="TEST_PROJECT"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_weight="1.5"
+        android:layout_height="wrap_content" />
+
+    <!-- 인증서 등록 날짜 -->
+    <TextView
+        android:id="@+id/item_cert_date_regi"
+        android:text="2018.12.28"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_weight="1.5"
+        android:layout_height="wrap_content" />
+
+    <!-- 인증서 만료 날짜 -->
+    <TextView
+        android:id="@+id/item_cert_date_end"
+        android:text="2019.12.28"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_weight="1.5"
+        android:layout_height="wrap_content" />
+</LinearLayout>
