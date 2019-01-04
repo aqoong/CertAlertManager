@@ -150,7 +150,7 @@ public class MainActivity extends AppCompatActivity {
                 openAddDialog(mContext);
 
                 break;
-            case R.id.menu_clear:dd
+            case R.id.menu_clear:
                 dataList.clear();
                 dataListAdapter.notifyDataSetChanged();
                 break;

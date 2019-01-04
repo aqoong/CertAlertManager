@@ -14,7 +14,7 @@ public class Data {
     private Date    dtCertRegi  = null;     //server cert regist date
     private Date    dtCertEnd   = null;     //server cert end date
 
-    SimpleDateFormat format = new SimpleDateFormat("yyyy.mm.dd");
+    SimpleDateFormat format = new SimpleDateFormat("yyyy.MM.dd");
 
     public String getStrProjName() {
         return strProjName;
@@ -34,13 +34,7 @@ public class Data {
 
     public void setDtCertRegi(String date) {
 
-        SimpleDateFormat formatter = new SimpleDateFormat("yyyymmdd");
-
-        try {
-            this.dtCertRegi = formatter.parse(date);
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
+        this.dtCertRegi = stringToDate(date);
     }
 
     public String getDtCertEnd() {
@@ -52,11 +46,21 @@ public class Data {
     }
 
     public void setDtCertEnd(String date) {
-        SimpleDateFormat formatter = new SimpleDateFormat("yyyymmdd");
+
+        this.dtCertEnd = stringToDate(date);
+    }
+
+    private Date stringToDate(String input){
+        Date result = null;
+
+        SimpleDateFormat transFormat = new SimpleDateFormat("yyyyMMdd");
+
         try {
-            this.dtCertEnd = formatter.parse(date);
+            result = transFormat.parse(input);
         } catch (ParseException e) {
             e.printStackTrace();
         }
+
+        return result;
     }
 }
